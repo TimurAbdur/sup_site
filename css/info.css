@@ -1,0 +1,142 @@
+.info {
+    background: url('../imgs/info-bg.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    margin-top: 140px;
+}
+
+.info::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 180px;
+    background-color: #262C27;
+    transform: translateY(-180px);
+}
+
+.info__top {
+    padding-top: 50px;
+    display: flex;
+    gap: 80px;
+    margin-bottom: 50%;
+}
+
+.info__top-text {
+    padding-top: 265px;
+    color:#FFF;
+    font-size: 18px;
+    width: 290px;
+    position: relative;
+}
+
+.info__top-text--one {
+    padding-bottom: 120px;
+}
+
+.info__top-text--two {
+    border-bottom: 1px solid #fff;
+}
+
+.info__btn {
+    bottom: 0;
+    right: 0;
+}
+
+.info__top-img {
+    z-index: 10;
+}
+
+.info__specs {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    padding-bottom: 50px;
+}
+
+.info__specs-title {
+    color: #FFF;
+    font-family: 'Comfortaa';
+    font-size: 60px;
+}
+
+.info__specs-list {
+    max-width: 565px;
+    padding: 30px 0 15px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;;
+}
+.info__specs-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+.info__specs-caption {
+    width: 185px;  
+}
+
+@media (max-width: 990px) {
+        .info__top {
+            display: block;
+        }
+
+        .info__top-text {
+            width: 100%;
+        }
+
+        .info__top-text--two {
+            padding-bottom: 20px;
+           padding-top: 100px;
+        }
+
+        .info__top-text {
+            margin: 0 auto;
+        }
+
+        .info__top-img {
+            display: block; 
+            width: 277px;
+            margin: 0 auto;
+        }
+
+        .info__specs {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 50px;
+        }
+}
+
+@media (max-width: 660px) {
+    .info__specs-list {
+        width: 100%;    
+    }
+
+    .info__specs-item {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 518px) {
+    .info__specs-item {
+        font-size: 20px;
+    }
+
+    .info__specs-caption {
+        width: 135px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .info__specs-item {
+        display: block;
+    }
+
+    .info__specs-caption {
+        margin-bottom: 10px;
+    }
+}

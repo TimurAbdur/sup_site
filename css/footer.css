@@ -1,0 +1,127 @@
+.footer {
+    padding: 100px 0 80px;
+    background-color: #262C27;
+    color: #fff;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 97px;
+}
+
+.footer__logo {
+    align-self: start;
+}
+
+.footer__logo path {
+    transition: 0.2s;
+}
+
+.footer__logo:hover path {
+    fill: #0093A1;
+}
+
+.footer__title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 60px;
+    margin-bottom: 27px;
+}
+
+.footer__form-input {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 57px;
+}
+
+.footer__form-input::placeholder {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22;
+    opacity: 0.2;
+}
+
+.footer__form-input:focus {
+    outline: none;
+}
+
+.footer__form-btn {
+    padding: 10px 66px;
+    background-color: #fff;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer__social-title {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.footer__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px;
+    margin-bottom: 50px;
+}
+
+.footer__gallery-item {
+    width: 100%;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list-link {
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+   .footer__top {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+   }
+
+   .footer__logo {
+        order: -2;
+        margin:  0 auto;
+   }
+   .footer__list {
+        display: block;
+        text-align: center;
+   }
+   .footer__list-item {
+        padding: 15px 0;        
+   }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 70px 0 30px;
+    }
+
+    .footer__gallery {
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 475px) {
+    .footer__title {
+        font-size: 38px;
+        line-height: 42px;
+    } 
+    .footer__logo svg {
+        width: 90%;
+    }
+}
